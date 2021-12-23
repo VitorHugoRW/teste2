@@ -1,0 +1,34 @@
+﻿@page "/carro/formulario"
+<h4>Formulário de Carro</h4>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <div class="form-group mb-12">
+                    <label>Ano</label>
+                    <input type="text" name="ano_carros" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="form-group mb-12">
+                    <label>Marca</label>
+                    <input type="text" name="nome_carros" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <div class="form-group mb-12">
+                    <label>Modelo</label>
+                    <input type="text" name="modelo_carros" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-12 text-right">
+                <button class="btn btn-danger" onclick="window.location.href='/carro'">Cancelar</button>
+                <button class="btn btn-success" onclick="salvar();">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/pages/carro-formulario.js"></script>
+}
